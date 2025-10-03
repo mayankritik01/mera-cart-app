@@ -1,5 +1,7 @@
 import express from 'express';
 import dotenv from 'dotenv';
+import cors from 'cors'; // <-- Naya import
+
 import connectDB from './config/db.js';
 import userRoutes from './routes/userRoutes.js';
 import productRoutes from './routes/productRoutes.js';
@@ -9,6 +11,7 @@ dotenv.config();
 connectDB();
 
 const app = express();
+app.use(cors()); // <-- CORS ko yahan enable karein
 app.use(express.json());
 
 app.get('/', (req, res) => {
