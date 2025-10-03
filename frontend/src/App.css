@@ -1,0 +1,272 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.product-link {
+  text-decoration: none;
+}
+
+.btn-back {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  background-color: #f0f0f0;
+  color: #333;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.product-details-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.product-image-large img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.product-info h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.product-info p {
+  line-height: 1.6;
+}
+
+.product-price-large {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.product-actions {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  align-self: start; /* Sticks to the top of its grid area */
+}
+
+.add-to-cart-btn-large {
+  width: 100%;
+  padding: 15px;
+  background-color: #ff9f00;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.add-to-cart-btn-large:hover {
+  background-color: #fb641b;
+}
+
+.add-to-cart-btn-large:disabled {
+  background-color: #c0c0c0;
+  cursor: not-allowed;
+}
+
+.qty-selector {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.qty-selector label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.qty-selector select {
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.cart-empty {
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.cart-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+}
+
+.cart-item {
+  display: flex;
+  padding: 15px;
+  border-bottom: 1px solid #e0e0e0;
+  gap: 15px;
+}
+
+.cart-item-image img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.cart-item-details a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+
+.cart-item-details p {
+  margin: 5px 0;
+}
+
+.cart-item-actions {
+  margin-left: auto;
+}
+
+.btn-remove {
+  background: none;
+  border: 1px solid #ccc;
+  color: #555;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cart-summary {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  align-self: start;
+}
+
+.total-price {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.btn-checkout {
+  width: 100%;
+  padding: 15px;
+  background-color: #fb641b;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.shipping-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+}
+.form-group {
+  margin-bottom: 1rem;
+}
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+.form-group input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.place-order-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+}
+
+.place-order-details h2 {
+  margin-bottom: 1rem;
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.orders-table th,
+.orders-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.orders-table th {
+  background-color: #f7f7f7;
+  font-weight: bold;
+}
+
+.orders-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.profile-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 30px;
+}
+
+.profile-form {
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+}

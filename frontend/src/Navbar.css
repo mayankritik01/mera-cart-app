@@ -1,0 +1,121 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px;
+    background-color: #2874f0; /* Flipkart jaisa neela rang */
+    color: white;
+    font-family: Arial, sans-serif;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar-search {
+    display: flex;
+    flex-grow: 1;
+    margin: 0 40px;
+}
+
+.navbar-search input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    font-size: 14px;
+}
+
+.navbar-search button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+}
+
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.navbar-btn {
+    background-color: #fff;
+    color: #2874f0 !important;
+    padding: 5px 25px;
+    border-radius: 2px;
+}
+
+/* ... (purana saara CSS) */
+
+.navbar-user-menu {
+    position: relative;
+    cursor: pointer;
+}
+
+.navbar-username {
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.navbar-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    color: black;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    min-width: 150px;
+    z-index: 1001;
+}
+
+.navbar-user-menu:hover .navbar-dropdown {
+    display: block;
+}
+
+.navbar-dropdown a, .navbar-dropdown button {
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    text-align: left;
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.navbar-dropdown a:hover {
+    background-color: #f1f1f1;
+}
+
+.logout-btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+/* ... purana saara CSS ... */
+
+.cart-badge {
+  background-color: #ff6161; /* Red color for badge */
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 12px;
+  font-weight: bold;
+  vertical-align: top;
+  margin-left: 5px;
+}
